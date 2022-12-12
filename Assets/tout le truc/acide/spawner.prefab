@@ -47,7 +47,7 @@ MonoBehaviour:
   shareOrientation: 0
   displayDebugInfo: 1
   prefabToSpawn:
-  - prefab: {fileID: 4045416896416125376, guid: a3978e3219c80c34c9a43a269420c330,
+  - prefab: {fileID: 4045416896416125376, guid: 4390a4b0d8939154f884a1bfa4dde14c,
       type: 3}
     weight: 1
   randomMinOffset: {x: 0, y: 0, z: 0}
