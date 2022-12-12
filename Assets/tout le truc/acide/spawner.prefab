@@ -55,7 +55,7 @@ MonoBehaviour:
   useCooldown: 1
   spawnCooldown: 3
   useInput: 0
-  spawnInputName: Input Name (InputManager)
+  spawnInputName: Horizontal
   spawnInsideParent: 0
   parent: {fileID: 0}
   requireResources: 0
