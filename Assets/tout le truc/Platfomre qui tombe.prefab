@@ -15,7 +15,9 @@ GameObject:
   - component: {fileID: 4190001208321113039}
   - component: {fileID: 7276100578212981249}
   - component: {fileID: 3382706284867264962}
+  - component: {fileID: 7491432523612505431}
   - component: {fileID: 2947284660228972232}
+  - component: {fileID: 7958251021022990130}
   m_Layer: 3
   m_Name: Platfomre qui tombe
   m_TagString: Untagged
@@ -250,7 +252,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1877
+  m_VersionIndex: 1880
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -358,18 +360,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5720c6a2974e7bb489b57249e7140f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0
-  specificTarget: {fileID: 0}
+  range: 0.1
+  specificTarget: {fileID: 3400765186952783124, guid: bee24f5a4597b2841bc63244c2fc8dd2,
+    type: 3}
   targetTagName: Player
   disableInstead: 0
   components:
-  - {fileID: 2947284660228972232}
+  - {fileID: 7491432523612505431}
   layerMask:
     serializedVersion: 2
     m_Bits: 8
-  findWithTag: 1
-  revertWhenOutOfRange: 1
+  findWithTag: 0
+  revertWhenOutOfRange: 0
   displayDebugInfo: 1
+--- !u!114 &7491432523612505431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413585827993854906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02d3c4f748eb76438f773d147b68a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 1
 --- !u!114 &2947284660228972232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,5 +404,17 @@ MonoBehaviour:
   disableAfter: 1
   timeBeforeDisable: 5
   loop: 1
-  components:
-  - {fileID: 0}
+  components: []
+--- !u!65 &7958251021022990130
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413585827993854906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 3}
+  m_Center: {x: -0.5, y: -0.5, z: 1.5}
