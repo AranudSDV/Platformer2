@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 4190001208321113039}
   - component: {fileID: 7276100578212981249}
   - component: {fileID: 3382706284867264962}
-  - component: {fileID: 7491432523612505431}
-  - component: {fileID: 2947284660228972232}
+  - component: {fileID: -5655041619629519376}
+  - component: {fileID: -7990315037150482485}
   - component: {fileID: 7958251021022990130}
+  - component: {fileID: -1662834179223456251}
   m_Layer: 3
   m_Name: Platfomre qui tombe
   m_TagString: Untagged
@@ -252,7 +253,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1880
+  m_VersionIndex: 1889
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -355,38 +356,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413585827993854906}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5720c6a2974e7bb489b57249e7140f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0.1
+  range: 10
   specificTarget: {fileID: 3400765186952783124, guid: bee24f5a4597b2841bc63244c2fc8dd2,
     type: 3}
   targetTagName: Player
   disableInstead: 0
   components:
-  - {fileID: 7491432523612505431}
+  - {fileID: -7990315037150482485}
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
-  findWithTag: 0
+    m_Bits: 64
+  findWithTag: 1
   revertWhenOutOfRange: 0
   displayDebugInfo: 1
---- !u!114 &7491432523612505431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413585827993854906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02d3c4f748eb76438f773d147b68a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 1
---- !u!114 &2947284660228972232
+--- !u!114 &-5655041619629519376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,12 +387,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableInstead: 0
-  displayDebugInfo: 0
-  timeBeforeEnable: 5
-  disableAfter: 1
-  timeBeforeDisable: 5
+  displayDebugInfo: 1
+  timeBeforeEnable: 3
+  disableAfter: 0
+  timeBeforeDisable: 3
   loop: 1
-  components: []
+  components:
+  - {fileID: -7990315037150482485}
+--- !u!114 &-7990315037150482485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413585827993854906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de70fe75f3b055242901bad5c505ed0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseGravityForce: {x: 0, y: -9.81, z: 0}
+  secondaryGravityForce: {x: 0, y: 9.81, z: 0}
+  maxVelocity: 50
+  invertOnInput: 0
+  inputName: Jump
+  instantGravityChangeOnInput: 0
+  invertJumpingDirection: 0
+  onlyWhenGrounded: 0
+  collisionCheckDistance: 0.65
+  invertAnimationType: 0
+  transformToInvert: {fileID: 0}
+  invertedRotation: {x: -180, y: 0, z: 0}
+  normalRotation: {x: 0, y: 0, z: 0}
+  gravityChangeBoolName: inverted
+  animator: {fileID: 0}
+  currentGravityForce: {x: 0, y: 0, z: 0}
+  showForces: 1
+  showGravity: 1
+  showGroundCheck: 1
+  showAnimation: 1
+  inputChoiceIndex: 0
 --- !u!65 &7958251021022990130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -418,3 +440,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 3}
   m_Center: {x: -0.5, y: -0.5, z: 1.5}
+--- !u!54 &-1662834179223456251
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413585827993854906}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
