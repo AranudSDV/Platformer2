@@ -42,3 +42,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ' Layer 7'
+    uniqueID: 1109149265
+    locked: 0
+  - name: ' Layer 6'
+    uniqueID: 1149522333
+    locked: 0
+  - name: ' Layer 5'
+    uniqueID: 2417878537
+    locked: 0
+  - name: ' Layer 4'
+    uniqueID: 3989254413
+    locked: 0
+  - name: ' Layer 3'
+    uniqueID: 1753854945
+    locked: 0
+  - name: Layer 2
+    uniqueID: 4036899195
+    locked: 0
+  - name: ' Layer platform'
+    uniqueID: 1395362591
+    locked: 0
+  - name: layer front 2
+    uniqueID: 2079071079
+    locked: 0
+  - name: layer front 1
+    uniqueID: 4080795171
+    locked: 0
+  - name: 'layer front '
+    uniqueID: 1740327605
+    locked: 0
