@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4045416896416124989}
   - component: {fileID: 4045416896416124988}
   - component: {fileID: -1267492913132672731}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: boule_d'acide lvl2
   m_TagString: acide
   m_Icon: {fileID: 0}
@@ -34237,6 +34237,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: projectile_d'acide Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 796194455654654267, guid: 29f2ef8884b449c46a16275abc2b584f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 796194456294658074, guid: 29f2ef8884b449c46a16275abc2b584f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 796194456294658075, guid: 29f2ef8884b449c46a16275abc2b584f,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -34251,6 +34261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 796194456452370846, guid: 29f2ef8884b449c46a16275abc2b584f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 796194456452370847, guid: 29f2ef8884b449c46a16275abc2b584f,
         type: 3}
@@ -34281,6 +34296,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 796194456737115107, guid: 29f2ef8884b449c46a16275abc2b584f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 796194457109476730, guid: 29f2ef8884b449c46a16275abc2b584f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f2ef8884b449c46a16275abc2b584f, type: 3}
