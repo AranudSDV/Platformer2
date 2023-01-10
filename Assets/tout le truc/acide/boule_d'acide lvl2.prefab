@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 4045416896416125382}
   - component: {fileID: 4045416896416124990}
   - component: {fileID: 4045416896416124989}
-  - component: {fileID: 4045416896416124988}
   - component: {fileID: -1267492913132672731}
   - component: {fileID: -6668444191154616758}
+  - component: {fileID: -6771336098070464431}
   m_Layer: 7
   m_Name: boule_d'acide lvl2
   m_TagString: acide
@@ -34130,19 +34130,6 @@ MonoBehaviour:
   inputName: Fire1
   displayTeleportPoint: 1
   inputChoiceIndex: 0
---- !u!114 &4045416896416124988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4045416896416125376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02d3c4f748eb76438f773d147b68a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 2.7
 --- !u!135 &-1267492913132672731
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34167,6 +34154,20 @@ SortingGroup:
   m_SortingLayerID: 1395362591
   m_SortingLayer: 7
   m_SortingOrder: 0
+--- !u!114 &-6771336098070464431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045416896416125376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33751a43147047d4697f435544f8be98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useTag: 0
+  tagName: 
 --- !u!1001 &1918929204716563262
 PrefabInstance:
   m_ObjectHideFlags: 0
